@@ -7,7 +7,6 @@ if('serviceWorker' in navigator){
 
 // Register ServiceWorker(SW), Register Push, Send Push
 async function send(){
-    urlBase64ToUint8Array(publicVapidKey);
     // Register Service Worker
     console.log('Registering service worker...');
     const register = await navigator.serviceWorker.register('/worker.js', {
